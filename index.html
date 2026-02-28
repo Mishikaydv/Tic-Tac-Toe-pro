@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Winner Message -->
+  <div class="msg-container hide">
+    <p id="msg">Winner</p>
+    <button id="new-btn">New Game</button>
+  </div>
+
+  <main>
+    <h1>Tic Tac Toe</h1>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <p>X: <span id="score-x">0</span></p>
+      <p>O: <span id="score-o">0</span></p>
+    </div>
+
+    <!-- Game Board -->
+    <div class="board">
+
+      <!-- 9 Game Boxes -->
+      <button class="box" data-index="0"></button>
+      <button class="box" data-index="1"></button>
+      <button class="box" data-index="2"></button>
+
+      <button class="box" data-index="3"></button>
+      <button class="box" data-index="4"></button>
+      <button class="box" data-index="5"></button>
+
+      <button class="box" data-index="6"></button>
+      <button class="box" data-index="7"></button>
+      <button class="box" data-index="8"></button>
+
+      <!-- Winning Line -->
+      <div id="winning-line"></div>
+
+    </div>
+
+    <!-- Reset Button -->
+    <button id="reset-btn">Reset Game</button>
+  </main>
+
+  <!-- Confetti Container -->
+  <div class="confetti-container" id="confetti-container"></div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+</html>
